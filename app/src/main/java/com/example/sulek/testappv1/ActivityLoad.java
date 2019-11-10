@@ -28,8 +28,9 @@ public class ActivityLoad extends Activity {
         user = FirebaseAuth.getInstance();
 
     }
-
-    public void onStart(View view) {
+    
+    @Override
+    public void onStart() {
         super.onStart();
         Timer timer = new Timer();
         // Check if user is signed in (non-null)
